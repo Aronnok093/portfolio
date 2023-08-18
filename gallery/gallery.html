@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Photo Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .photo {
+            width: 300px;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border: 2px solid #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="photo" style="background-image: url('photos/img (1).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (2).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (3).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (4).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (5).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (6).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (7).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (8).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (9).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (10).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (11).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (12).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (13).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (14).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (15).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (16).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (17).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (18).JPG');"></div>
+		<div class="photo" style="background-image: url('photos/img (19).JPG');"></div>
+        <!-- Add more photos as needed -->
+    </div>
+	<script>
+        const photos = document.querySelectorAll('.photo');
+
+        photos.forEach(photo => {
+            photo.addEventListener('click', () => {
+                // Add your code here to open the image in a larger view
+                // You might want to use a modal or lightbox library for this purpose
+            });
+        });
+    </script>
+</body>
+</html>
