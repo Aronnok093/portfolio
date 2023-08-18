@@ -1,88 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
+<style>
 body {
-background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-background-size: 100% 100%;
-animation: gradient 15s ease infinite;
-height: 100vh;
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
 }
 
-@keyframes gradient {
-0% {
-background-position: 0% 50%;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-50% {
-background-position: 100% 50%;
-}
-100% {
-background-position: 0% 50%;
-}
-}
-div {
-  width: 400px;
-  height: 300px;
-  background: black;
-  transition: width 2s, height 2s, transform 2s;
-  margin: auto;
-}
-.inside{
-    
+.card {
+    width: 400px;
+    height: 300px;
+    background-color: #282c36;
+    transition: width 0.5s, height 0.5s, transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
-div:hover {
-  width: 900px;
-  height: 800px;
-  transform: rotate(180deg);
+.card:hover {
+    width: 600px;
+    height: 400px;
+    transform: rotate(5deg);
 }
+
 a {
-  display: block;
-  margin-top: 30px;
-  text-align: center;
-  color: azure;
-  font-size: large;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-top: 30px;
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: #70a5fd;
+    font-size: 18px;
+    text-decoration: none;
 }
-p{
-    font-family: fantasy;
-    text-shadow: #FC0 1px 0 10px;
-    color: aliceblue;
+
+p {
+    font-size: 14px;
+    text-shadow: 1px 1px 2px rgb(242, 7, 7);
 }
-h1{
-    background-color: aliceblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+h1 {
+    background-color: #1e1e1e;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0;
 }
 </style>
 <title>University Project</title>
 </head>
 <body>
-    <h1>Imagination better than knowledge</h1>
-   <div>
-
-        <div class="inside">
-            <a href="https://github.com/Aronnok093/Railway-E-Ticketing" target="_blank">CSE3200: SPRING 2022</a>
+    <h1>Imagination Better than Knowledge</h1>
+    <div class="container">
+        <div class="card">
+            <a href="https://github.com/Aronnok093/Railway-E-Ticketing" target="_blank">CSE3200: ASP.NET MVC with C# Python MSSQL</a>
             <a href="https://github.com/Aronnok093/USART-Communication" target="_blank">CSE3216: Microcontroller Based System Design Lab</a>
-            <a href="https://github.com/Aronnok093/Restaurant-Management-System" target="_blank">CSE3104: FALL 2021</a>
-            <a href="https://github.com/Aronnok093/Android-Studio-Project" target="_blank">CSE2200: Software Development III</a>
-            <a href="https://github.com/Aronnok093/Java-Swing" target="_blank">CSE2100: Software Development II</a>
-            <a href="https://github.com/Aronnok093/Igraphics_project" target="_blank">CSE2100: Software Development I</a>
-
-            <p>_CSE3200: <strong>ASP.NET MVC with </strong><strong>C# Python MSSQL</strong></p>
-            <p>_CSE3216: <strong>Resister Level USART Communication using </strong> <strong>Arduino uno</strong></p>
-            <p>_CSE3104: <strong>Data Base Lab-> </strong><strong>Java, MSSQL</strong></p>
-            <p>_CSE2200: <strong>Android Development-> </strong><strong>Kotlin, FireBase</strong></p>
-            <p>_CSE2100: <strong>Java Swing Java FX </strong><strong>MYSQL</strong></p>
-            <p>_CSE2100: <strong>Igraphics OpenGL Language: </strong><strong>C/C++</strong></p>
+            <a href="https://github.com/Aronnok093/Restaurant-Management-System" target="_blank">CSE3104: Database Lab with Java and MSSQL</a>
+            <a href="https://github.com/Aronnok093/Android-Studio-Project" target="_blank">CSE2200: Android Development with Kotlin and Firebase</a>
+            <a href="https://github.com/Aronnok093/Java-Swing" target="_blank">CSE2100: Java Swing and JavaFX with MySQL</a>
+            <a href="https://github.com/Aronnok093/Igraphics_project" target="_blank">CSE2100: Igraphics OpenGL with C/C++</a>
+            <a href="https://github.com/Aronnok093/DDSLab/tree/main/Project" target="_blank">CSE4126: Distributed Database Systems Lab with Oracle SQL/PL</a>
+            <!-- Add more project links as needed -->
         </div>
-
-   </div>
-
-
-
+    </div>
 </body>
 </html>
-
-
