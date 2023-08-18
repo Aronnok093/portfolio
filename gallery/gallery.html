@@ -89,29 +89,35 @@
         <span class="close">&times;</span>
         <img class="modal-content" id="modal-image">
     </div>
-	<script>
-        const photos = document.querySelectorAll('.photo');
-	const modal = document.getElementById('modal');
-	const modalImage = document.getElementById('modal-image');
-	const closeBtn = document.querySelector('.close');
-	
-	photos.forEach(photo => {
-	    photo.addEventListener('click', () => {
-	        modal.style.display = 'block';
-	        modalImage.src = photo.src;
-	    });
-	});
-	
-	closeBtn.addEventListener('click', () => {
-	    modal.style.display = 'none';
-	});
-	
-	window.addEventListener('click', event => {
-	    if (event.target === modal) {
-	        modal.style.display = 'none';
-	    }
-	});
 
-    </script>
+<!-- ... Your HTML and CSS ... -->
+
+<script>
+    const photos = document.querySelectorAll('.photo');
+    const modal = document.getElementById('modal');
+    const modalImage = document.getElementById('modal-image');
+    const closeBtn = document.querySelector('.close');
+
+    photos.forEach(photo => {
+        photo.addEventListener('click', () => {
+            const backgroundImage = photo.style.backgroundImage;
+            const imageURL = backgroundImage.slice(5, -2); // Extracting the URL from "url('...')"
+            modal.style.display = 'block';
+            modalImage.src = imageURL;
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', event => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+</script>
+
 </body>
 </html>
