@@ -1,165 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #282c34;
-    color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    transition: background-color 0.5s ease;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of MD Fardin Jaman Aranyak - Software Engineer | Django | ASP.NET">
+    <meta name="author" content="Fardin Jaman Aranyak">
+    <meta name="keywords" content="Fardin Jaman Aranyak, Portfolio, Django, ASP.NET, Software Engineer">
+    <title>Portfolio - Fardin Jaman Aranyak</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #282c34;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            transition: background-color 0.5s ease;
+        }
 
-.header {
-    text-align: center;
-    padding: 40px;
-    background-color: #20232a;
-    border-bottom: 2px solid #61dafb;
-}
+        .header {
+            text-align: center;
+            padding: 40px;
+            background-color: #20232a;
+            border-bottom: 2px solid #61dafb;
+        }
 
-.header h1 {
-    font-size: 3em;
-    margin: 0;
-    color: #61dafb;
-    letter-spacing: 2px;
-}
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #61dafb;
+            letter-spacing: 2px;
+        }
 
-.main {
-    padding: 40px;
-}
+        .main {
+            padding: 40px;
+        }
 
-.profile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-}
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            text-align: center;
+        }
 
-.profile img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 4px solid #61dafb;
-    margin-right: 40px;
-    transition: transform 0.3s ease;
-}
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #61dafb;
+            margin: 20px;
+            transition: transform 0.3s ease;
+        }
 
-.profile img:hover {
-    transform: scale(1.1);
-}
+        .profile img:hover {
+            transform: scale(1.1);
+        }
 
-.profile h2 {
-    font-size: 2.5em;
-    margin: 0;
-    letter-spacing: 1px;
-}
+        .profile h2 {
+            font-size: 2.5em;
+            margin: 0;
+            letter-spacing: 1px;
+        }
 
-.about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-}
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+            gap: 20px;
+        }
 
-.about-desc {
-    width: 60%;
-    padding: 20px;
-    background-color: #20232a;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+        .about-desc {
+            width: 80%;
+            padding: 20px;
+            background-color: #20232a;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-.about-desc h3 {
-    font-size: 2em;
-    margin-top: 0;
-    color: #61dafb;
-    letter-spacing: 1px;
-}
+        .about-desc h3 {
+            font-size: 2em;
+            margin-top: 0;
+            color: #61dafb;
+            letter-spacing: 1px;
+        }
 
-.about-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+        .about-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-.about-list li {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
+        .about-list li {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-.social-links a {
-    display: inline-block;
-    margin: 0 20px;
-    color: #61dafb;
-    font-size: 2em;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+        .social-links a {
+            display: inline-block;
+            margin: 0 20px;
+            color: #61dafb;
+            font-size: 1.8em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-.social-links a:hover {
-    color: #ffffff;
-}
+        .social-links a:hover {
+            color: #ffffff;
+        }
 
-.footer {
-    text-align: center;
-    padding: 40px;
-    background-color: #20232a;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-}
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #20232a;
+            position: relative;
+            z-index: 1;
+        }
 
-.footer a {
-    display: inline-block;
-    margin: 0 20px;
-    color: #61dafb;
-    font-size: 1.8em;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+        .footer a {
+            display: inline-block;
+            margin: 10px;
+            color: #61dafb;
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-.footer a:hover {
-    color: #ffffff;
-}
+        .footer a:hover {
+            color: #ffffff;
+        }
 
-@media only screen and (max-width: 1068px) {
-    .profile {
-        flex-direction: column;
-        text-align: center;
-    }
+        @media only screen and (max-width: 768px) {
+            .profile img {
+                width: 150px;
+                height: 150px;
+            }
 
-    .profile img {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
+            .profile h2 {
+                font-size: 2em;
+            }
 
-    .about {
-        flex-direction: column;
-        text-align: center;
-    }
+            .about-desc {
+                width: 100%;
+            }
 
-    .about-desc {
-        width: 100%;
-    }
-
-    .footer {
-        text-align: center;
-    }
-}
-</style>
-<title>Portfolio</title>
+            .footer a {
+                font-size: 1.3em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="rotate-content">
     <div class="header">
         <h1>MD Fardin Jaman Aranyak</h1>
     </div>
@@ -167,7 +166,7 @@ body {
     <div class="main">
         <div class="profile">
             <img src="photo/myPhoto.jpg" alt="Profile Picture">
-            <h2>B.Sc. in CSE | Django, ASP.NET</h2>
+         <h2>B.Sc. in CSE | Work at Shin Shin Group | Django, ASP.NET</h2>
         </div>
         
         <div class="about">
@@ -175,37 +174,34 @@ body {
                 <h3>Skills</h3>
                 <ul class="about-list">
                     <li>Django, Flask, ReactJS, Bootstrap</li>
-                    <li>ASP.NET CORE</li>
+                    <li>ASP.NET Core</li>
                     <li>Object-Oriented Programming (OOP)</li>
                     <li>Dynamic Website Development</li>
                 </ul>
             </div>
-            <div class="social-links">
-                <a href="https://github.com/Aronnok093" target="_blank">&#x1F4BB;GitHub</a>
+        </div>
+
+        <div class="social-links">
+            <a href="https://github.com/Aronnok093" target="_blank">💻 GitHub</a>
+            <a href="https://500px.com/p/kfardin0" target="_blank">📷 500-PX</a>
+        </div>
+
+        <div class="linkedin-badge">
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="VERTICAL" data-vanity="md-fardin-jaman-aranyak-744890191" data-version="v1">
+                <a class="badge-base__link LI-simple-link" href="https://bd.linkedin.com/in/md-fardin-jaman-aranyak-744890191?trk=profile-badge">LinkedIn Profile</a>
             </div>
-
-            <div class="linkedin-badge">
-                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="VERTICAL" data-vanity="md-fardin-jaman-aranyak-744890191" data-version="v1">
-                    <a class="badge-base__link LI-simple-link" href="https://bd.linkedin.com/in/md-fardin-jaman-aranyak-744890191?trk=profile-badge">MD. Fardin Jaman Aranyak</a>
-                </div>
-            </div>
         </div>
+    </div>
 
-        </div>
-
-        
-    
-        <div class="footer">
-            <a href="skills/skills.html" target="_blank">Skills</a>
-            <a href="achievement/achievement.html" target="_blank">Achievements</a>
-            <a href="resume/resume.html" target="_blank">Resume</a>
-            <a href="contact/contact.html" target="_blank">Contact Info</a>
-            <a href="university project/university project.html" target="_blank">University Projects</a>
-            <a href="gallery/gallery.html" target="_blank">University Gallery</a>
-            <a href="https://500px.com/p/kfardin0" target="_blank">500-PX</a>
-        </div>
+    <div class="footer">
+        <a href="skills/skills.html" target="_blank">Skills</a>
+        <a href="achievement/achievement.html" target="_blank">Achievements</a>
+        <a href="resume/resume.html" target="_blank">Resume</a>
+        <a href="contact/contact.html" target="_blank">Contact Info</a>
+        <a href="university project/university project.html" target="_blank">University Projects</a>
+        <a href="gallery/gallery.html" target="_blank">Gallery</a>
     </div>
 
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
-</html>
+</html>>
